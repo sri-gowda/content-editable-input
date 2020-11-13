@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    .contentEditableInput{
+      outline: none;
+      
+    }
+    .contentEditableInput:empty:before{
+      content: attr(placeholder);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="contentEditableInput" contenteditable="true" placeholder="Type here"></div>
+</body>
+</html>
